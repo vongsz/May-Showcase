@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescue Tracker</title>
+    <!-- Leaflet CSS via CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Rescue.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>WeReScue Tracker</h1>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Map container for Leaflet.js -->
+        <div id="map"></div>
+
+        <!-- Alert section -->
+        <div class="alert-section">
+            <h2>Alerts</h2>
+            <div class="alert">SOS Activated: Victim at [Location] on 2025-05-18 17:55</div>
+            <a href="#" class="btn">View Alert Details</a>
+        </div>
+
+        <!-- Tracker status -->
+        <div class="status-section">
+            <h2>Tracker Status</h2>
+            <div class="status-item">
+                <span>Tracker ID:</span>
+                <span>#123456</span>
+            </div>
+            <div class="status-item">
+                <span>Battery Level:</span>
+                <span>85%</span>
+            </div>
+            <div class="status-item">
+                <span>Last Update:</span>
+                <span>2025-05-18 17:55</span>
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="settings-section">
+            <h2>Settings</h2>
+            <a href="#" class="btn">Register New Tracker</a>
+            <a href="#" class="btn">Manage Trusted Contacts</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Rescue Tracker. All rights reserved.</p>
+    </footer>
+
+    <!-- Leaflet JavaScript via CDN -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Custom map JavaScript -->
+    <script src="Rescue.js"></script>
+</body>
+</html>
